@@ -8,3 +8,5 @@ class Person(models.Model):
     direccion = models.CharField( max_length=100,default="calle")
     domicilio = models.CharField(max_length=50,default="centro")
 
+    def __str__(self):
+        return 'nombre: ' + self.nombre + 'edad: ' + str(self.edad)

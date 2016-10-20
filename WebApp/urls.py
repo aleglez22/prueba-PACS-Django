@@ -1,10 +1,11 @@
 from django.conf.urls import url
 
-from . import views 
+from . import views
 
 urlpatterns = [
     url(r'^$', views.index, name='hola'),
     url(r'^index/$', views.index, name='indexxx'),
+    url(r'^personas/$', views.personas, name='personas'),
     url(r'^([0-9])/$', views.index, name='indexnum'),
     #url(r'^$', gol),
 ]

@@ -1,0 +1,15 @@
+<HTML>
+<HEAD>
+<TITLE>Plantilla de personas</TITLE>
+</HEAD>
+<BODY>
+<p><h2>List of Personas</h2></p>
+<br><br>
+{% for person in person_list %}
+
+<p>{{person.nombre }}  is {{person.edad}}  years old </p><br>
+
+
+{% endfor %}
+</BODY>
+</HTML>
